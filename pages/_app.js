@@ -4,7 +4,7 @@ import NavBar from "../components/nav/navbar";
 function MyApp({ Component, pageProps }) {
   return( 
     <div>
-       <NavBar username = "Niels"/>
+       {/* <NavBar username = "Niels"/> */}
       <Component {...pageProps} />{" "}
      
     </div>
