@@ -3,6 +3,7 @@ import Head from "next/head";
 import Banner from "../components/banner/banner";
 import Card from "../components/card/card";
 import SectionCards from "../components/card/section-cards";
+import NavBar from "../components/nav/navbar";
 // these needs to be exported as default but you can only export 1 function on a page but you can import as default
 import { default as getVideos, getPopularVideos} from "../lib/videos"
 
@@ -34,7 +35,7 @@ export default function Home({disneyVideos, travelVideos, productivityVideos, po
       </Head>
       <div className="styles.main">
 
-     
+      <NavBar username = "Niels"/> 
       <Banner
         title="Clifford the red dog"
         subTitle="a very cute dog"

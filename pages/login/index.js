@@ -2,11 +2,16 @@ import Head from "next/head";
 import styles from './login.module.css'
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState} from "react";
+import { useRouter } from "next/router";
 
 const login = () =>{
+    // use state = set var and use it in different functions
     const [userMsg, setUserMsg] = useState("");
     const [email, setEmail] = useState("");
+
+    // use router = if router is right then use router.push
+    const router = useRouter();
 
     const handleOnChangeEmail = (e) => {
         setUserMsg("");
@@ -20,11 +25,17 @@ const login = () =>{
     console.log("hi button!");
 
     if(email){
-        // route to dashboard 
+        if(email === "niels.perdon@gmail.com"){
+            // route to dashboard 
+        console.log("route to dashboard");
+        router.push("/");
      }else{
-         // show user message
-         setUserMsg("enter valid email adress")
+        setUserMsg("something went wrong loging in");
      }
+    }else{
+         // show user message
+        setUserMsg("enter valid email adress") 
+    }
  }
     return(
         <div className={styles.container}>
