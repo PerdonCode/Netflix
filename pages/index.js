@@ -37,6 +37,7 @@ export default function Home({disneyVideos, travelVideos, productivityVideos, po
 
       <NavBar username = "Niels"/> 
       <Banner
+        videoId="4zH5iYM4wJo"
         title="Clifford the red dog"
         subTitle="a very cute dog"
         imgUrl="/static/clifford2.jpg" />
