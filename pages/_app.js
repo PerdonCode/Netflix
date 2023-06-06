@@ -1,13 +1,12 @@
 import "../styles/globals.css";
-import React from "react";
-import { UserProvider } from '@auth0/nextjs-auth0/client';
+import NavBar from "../components/nav/navbar";
+
 
 function MyApp({ Component, pageProps }) {
   return( 
     <div>
-      <UserProvider>
+      <NavBar username = "Niels"/> 
         <Component {...pageProps} />
-      </UserProvider>
     </div>
   );
 }

@@ -36,7 +36,7 @@ const NavBar = (props) => {
 
         <ul className={styles.navItems}>
           <li className={styles.navItem} onClick={handleOnClickHome}>
-            Home
+            <a href="/">Home</a>
           </li>
           <li className={styles.navItem2} onClick={handleOnClickMyList}>
             My List

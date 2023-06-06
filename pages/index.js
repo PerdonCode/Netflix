@@ -34,8 +34,7 @@ export default function Home({disneyVideos, travelVideos, productivityVideos, po
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="styles.main">
-
-      <NavBar username = "Niels"/> 
+        
       <Banner
         videoId="4zH5iYM4wJo"
         title="Clifford the red dog"
